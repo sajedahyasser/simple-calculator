@@ -1,0 +1,59 @@
+
+input[type="button"]{
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, hotpink), color-stop(1, hotpink) );
+    background:-moz-linear-gradient(  pink 5%, pink 100% );
+    background-color: deeppink;
+    border:1px solid deeppink;
+    display:inline-block;
+    color: springgreen;
+    font-family:Andalus;
+    font-size:30px;
+    line-height:18px;
+    text-decoration:none;
+    text-align:center;
+    margin-bottom:1.5px;
+    margin-left: 1.5px;
+    margin-right:1.5px ;
+    margin-top:1.5px ;
+    height: 45px;
+    width: 450px;
+}
+input[type="button"]{
+    width: 80px;
+}
+#btnC,#btnpercentg{
+    width:184px;
+    margin-left: 1.5px;
+
+}
+#btnequals{
+    margin-left: 1.5px;
+    width:950px;
+    height: 90px;
+
+}
+
+#btn7,#btn4,#btn1,#btn0 {
+    margin-left: 0.1px;
+}
+
+input[type="button"]:active {
+    position:relative;
+    background:#989898;
+}
+
+input[type="Text"] {
+    padding-left: 0.1px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    background-color: pink ;
+    height:80px;
+    width: 430px;
+    border: deeppink;
+    color:springgreen;
+}
+body {
+    background-color: #080808 ;
+    overflow: hidden;
+}
+

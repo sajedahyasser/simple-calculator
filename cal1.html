@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>calculator</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+
+<body>
+
+
+
+    <div id='calc'>
+
+        <form name="calculator">
+
+            <input type="text" name="answer" />
+            <br>
+            <script>
+                var flag = 0;
+            </script>
+            <input type="button" value=" 1 " onclick="res();calculator.answer.value += '1'" />
+            <input type="button" value=" 2 " onclick="res();calculator.answer.value += '2'" />
+            <input type="button" value=" 3 " onclick="res();calculator.answer.value += '3'" />
+            <input type="button" value=" c " onclick="res();calculator.answer.value = ''" />
+            <input type="button" value=" % " onclick="reset();calculator.answer.value += '%'" />
+
+            <br/>
+
+            <input type="button" value=" 4 " onclick="res();calculator.answer.value += '4'" />
+            <input type="button" value=" 5 " onclick="res();calculator.answer.value += '5'" />
+            <input type="button" value=" 6 " onclick="res();calculator.answer.value += '6'" />
+            <input type="button" value=" + " onclick="res();calculator.answer.value += '+'" />
+            <input type="button" value="=\-" onclick="res();calculator.answer.value += '+\-'" />
+            </br>
+
+            <input type="button" value=" 7 " onclick="res();calculator.answer.value += '7'" />
+            <input type="button" value=" 8 " onclick="res();calculator.answer.value += '8'" />
+            <input type="button" value=" 9 " onclick="res();calculator.answer.value += '9'" />
+            <input type="button" value=" - " onclick="res();calculator.answer.value += '-'" />
+            <input type="button" value=" x " onclick="res();calculator.answer.value += '*'" />
+            </br>
+
+            <input type="button" value=" 0 " onclick="res();calculator.answer.value += '0'" />
+            <input type="button" value=" . " onclick="res();calculator.answer.value += '.'" />
+            <input type="button" value=" / " onclick="res();calculator.answer.value += '/'" />
+            <input type="button" value=" ( " onclick="res();calculator.answer.value += '('" />
+            <input type="button" value=" ) " onclick="res();calculator.answer.value += ')'" />
+
+            </br>
+            <input type="button" value=" = " onclick="fun(calculator.answer.value)" />
+        </br>
+            <script>
+
+
+                function fun(e) {
+                    flag = 1;
+                    try {
+                        let result =  eval(calculator.answer.value);
+                        calculator.answer.value= result;
+                    }
+                    catch (e) {
+                         calculator.answer.value = 'not valid';
+                    }
+                }
+                function res(){
+                    if(flag === 1){
+                        calculator.answer.value = '';
+                        flag = 0;
+                    }
+                }
+
+
+
+            </script>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
